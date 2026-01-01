@@ -48,10 +48,11 @@ function App() {
           </div>
           <div className="flex justify-end">
             <button
-              className="px-6 py-2.5 rounded-full text-white font-medium transition-all hover:shadow-lg hover:scale-105 active:scale-95"
+              className="px-6 py-2.5 rounded-full text-white font-medium transition-all hover:shadow-lg hover:scale-105 active:scale-95 relative overflow-hidden group"
               style={{ backgroundColor: "#007AFF" }}
             >
-              Contact Sales
+              <span className="absolute inset-0 bg-white transform translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
+              <span className="relative group-hover:text-slate-900 transition-colors duration-300">Contact Sales</span>
             </button>
           </div>
         </div>
