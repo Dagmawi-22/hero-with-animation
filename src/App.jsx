@@ -18,41 +18,49 @@ function App() {
       }}
     >
       <nav className="absolute top-6 left-0 right-0 z-10 px-6">
-        <div className="max-w-7xl mx-auto bg-white rounded-4xl shadow-lg px-6 py-4 grid grid-cols-3 items-center">
-          <div className="text-2xl font-bold text-slate-900">Logo</div>
+        <div className="max-w-7xl mx-auto bg-white rounded-4xl shadow-lg px-6 py-1 grid grid-cols-3 items-center">
+          <div className="text-xs font-bold text-slate-900">
+            <img
+              src="/assets/icons/logo.svg"
+              alt="Logo"
+              className="w-20 h-14"
+            />
+          </div>
           <div className="hidden md:flex items-center justify-center gap-8">
             <a
               href="#"
-              className="text-slate-500 hover:text-slate-900 transition-colors"
+              className="text-xs text-slate-500 hover:text-slate-900 transition-colors"
             >
               How it Works
             </a>
             <a
               href="#"
-              className="text-slate-500 hover:text-slate-900 transition-colors"
+              className="text-xs text-slate-500 hover:text-slate-900 transition-colors"
             >
               Pricing
             </a>
             <a
               href="#"
-              className="text-slate-500 hover:text-slate-900 transition-colors"
+              className="text-xs text-slate-500 hover:text-slate-900 transition-colors"
             >
               Use Case
             </a>
             <a
               href="#"
-              className="text-slate-500 hover:text-slate-900 transition-colors"
+              className="text-xs text-slate-500 hover:text-slate-900 transition-colors"
             >
               FAQ
             </a>
           </div>
           <div className="flex justify-end">
             <button
-              className="px-6 py-2.5 rounded-full text-white font-medium transition-all hover:shadow-lg hover:scale-105 active:scale-95 relative overflow-hidden group"
+              className="px-6 py-1.5 rounded-full text-white text-sm font-medium transition-all hover:shadow-lg hover:scale-105 active:scale-95 relative overflow-hidden group"
               style={{ backgroundColor: "#007AFF" }}
             >
               <span className="absolute inset-0 bg-white transform translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
-              <span className="relative group-hover:text-slate-900 transition-colors duration-300">Contact Sales</span>
+              <span className="relative group-hover:text-slate-900 transition-colors duration-300">
+                Contact Sales
+              </span>
             </button>
           </div>
         </div>
@@ -60,11 +68,7 @@ function App() {
 
       <div className="max-w-7xl mx-auto px-6 pt-32 pb-20">
         <div
-          className={`flex justify-center items-center text-center mb-8 transition-all duration-1000 ${
-            isVisible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 -translate-y-12"
-          }`}
+          className={`flex justify-center items-center text-center mb-8 transition-all duration-1000`}
         >
           <div
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap shadow-sm"
@@ -112,7 +116,7 @@ function App() {
             alt="Bird"
           />
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-tight">
+          <h1 className="text-xl md:text-xl lg:text-2xl font-bold text-slate-900 leading-tight">
             <span className="block" style={{ color: "#007AFF" }}>
               iMessage Automation
             </span>
@@ -120,19 +124,19 @@ function App() {
             <span className="block">Workflows.</span>
           </h1>
 
-          <p className="text-xl text-slate-600 leading-relaxed">
+          <p className="text-xs text-slate-600 leading-relaxed max-w-lg mx-auto">
             Coup lets you, your team, or AI workflows send iMessages directly
             from your phone number, running securely on your Mac or Mac Mini.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              className="px-8 py-4 rounded-full text-white font-semibold text-lg transition-all hover:shadow-xl hover:scale-105 active:scale-95"
+              className="px-4 py-2 rounded-full text-white font-semibold text-xs transition-all hover:shadow-xl hover:scale-105 active:scale-95"
               style={{ backgroundColor: "#007AFF" }}
             >
               Get Started
             </button>
-            <button className="px-8 py-4 rounded-full bg-white text-slate-900 font-semibold text-lg border-2 border-slate-200 transition-all hover:border-slate-300 hover:shadow-lg hover:scale-105 active:scale-95 inline-flex items-center gap-3">
+            <button className="px-8 py-2 rounded-full bg-white text-slate-900 font-semibold text-xs border-2 border-slate-200 transition-all hover:border-slate-300 hover:shadow-lg hover:scale-105 active:scale-95 inline-flex items-center gap-3">
               <img className="w-5 h-5" src="/assets/icons/mac.svg" alt="Mac" />
               <span className="text-slate-400">|</span>
               Download the Mac app
@@ -142,7 +146,7 @@ function App() {
       </div>
 
       <div
-        className={`fixed md:bottom-70 -bottom-10 left-0 right-0 h-32 pointer-events-none transition-all duration-1000 ${
+        className={`fixed md:bottom-40 -bottom-10 left-0 right-0 h-32 pointer-events-none transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
         }`}
         style={{ transitionDelay: "600ms" }}
@@ -153,7 +157,7 @@ function App() {
       <div className="fixed bottom-28 left-0 right-0 z-10 px-12">
         <div className="max-w-7xl mx-auto flex justify-between items-end">
           <img
-            className={`w-30 h-30 transition-all duration-1000 ${
+            className={`w-20 h-20 transition-all duration-1000 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-20"
@@ -164,7 +168,7 @@ function App() {
           />
 
           <img
-            className={`w-30 h-30 transition-all duration-1000 ${
+            className={`w-20 h-20 transition-all duration-1000 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-20"
@@ -175,7 +179,7 @@ function App() {
           />
 
           <img
-            className={`w-30 h-30 transition-all duration-1000 ${
+            className={`w-20 h-20 transition-all duration-1000 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-20"
@@ -186,7 +190,7 @@ function App() {
           />
 
           <img
-            className={`w-30 h-30 transition-all duration-1000 ${
+            className={`w-20 h-20 transition-all duration-1000 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-20"
