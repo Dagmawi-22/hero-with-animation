@@ -59,12 +59,12 @@ export default function HeroSection({ isVisible }) {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            className="px-4 py-2 rounded-full text-white font-semibold text-xs transition-all hover:shadow-xl hover:scale-105 active:scale-95"
+            className="px-4 py-2 rounded-full text-white font-semibold text-xs transition-all"
             style={{ backgroundColor: "#007AFF" }}
           >
             Get Started
           </button>
-          <button className="px-8 py-2 rounded-full bg-white text-slate-900 font-semibold text-xs border-2 border-slate-200 transition-all hover:border-slate-300 hover:shadow-lg hover:scale-105 active:scale-95 inline-flex items-center gap-3">
+          <button className="px-8 py-2 rounded-full bg-white text-slate-900 font-semibold text-xs border-2 border-slate-200 transition-all inline-flex items-center gap-3">
             <img className="w-5 h-5" src="/assets/icons/mac.svg" alt="Mac" />
             <span className="text-slate-400">|</span>
             Download the Mac app

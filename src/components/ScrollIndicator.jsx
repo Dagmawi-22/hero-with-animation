@@ -5,7 +5,7 @@ export default function ScrollIndicator() {
         Scroll to learn more
       </p>
       <img
-        className="w-6 h-6 animate-bounce"
+        className="w-6 h-6"
         src="/assets/icons/scroll.svg"
         alt="Scroll"
       />
