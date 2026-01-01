@@ -13,7 +13,8 @@ function App() {
     <div
       className="min-h-screen"
       style={{
-        background: "linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), linear-gradient(0deg, #007AFF, #007AFF)"
+        background:
+          "linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), linear-gradient(0deg, #007AFF, #007AFF)",
       }}
     >
       <nav className="absolute top-6 left-0 right-0 z-10 px-6">
@@ -69,7 +70,7 @@ function App() {
             style={{ backgroundColor: "#fff", color: "#007AFF" }}
           >
             <img
-              className="w-5 h-5"
+              className="w-9 h-9"
               src="/assets/icons/message.svg"
               alt="iMessage"
             />
@@ -80,7 +81,9 @@ function App() {
         <div className="max-w-4xl mx-auto text-center space-y-8 relative">
           <img
             className={`absolute -left-40 top-8 w-16 h-16 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-40"
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-40"
             }`}
             style={{ transitionDelay: "200ms" }}
             src="/assets/icons/bird.svg"
@@ -94,7 +97,9 @@ function App() {
 
           <img
             className={`absolute -right-28 top-14 w-14 h-14 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-40"
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-40"
             }`}
             style={{ transitionDelay: "300ms" }}
             src="/assets/icons/bird.svg"
@@ -127,11 +132,7 @@ function App() {
               Get Started
             </button>
             <button className="px-8 py-4 rounded-full bg-white text-slate-900 font-semibold text-lg border-2 border-slate-200 transition-all hover:border-slate-300 hover:shadow-lg hover:scale-105 active:scale-95 inline-flex items-center gap-3">
-              <img
-                className="w-5 h-5"
-                src="/assets/icons/mac.svg"
-                alt="Mac"
-              />
+              <img className="w-5 h-5" src="/assets/icons/mac.svg" alt="Mac" />
               <span className="text-slate-400">|</span>
               Download the Mac app
             </button>
@@ -145,18 +146,16 @@ function App() {
         }`}
         style={{ transitionDelay: "600ms" }}
       >
-        <img
-          className="w-full"
-          src="/assets/icons/bg.svg"
-          alt="Background"
-        />
+        <img className="w-full" src="/assets/icons/bg.svg" alt="Background" />
       </div>
 
       <div className="fixed bottom-28 left-0 right-0 z-10 px-12">
         <div className="max-w-7xl mx-auto flex justify-between items-end">
           <img
             className={`w-30 h-30 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-20"
             }`}
             style={{ transitionDelay: "700ms" }}
             src="/assets/icons/birdwithmessage1.svg"
@@ -165,7 +164,9 @@ function App() {
 
           <img
             className={`w-30 h-30 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-20"
             }`}
             style={{ transitionDelay: "800ms" }}
             src="/assets/icons/birdwithmessage2.svg"
@@ -174,7 +175,9 @@ function App() {
 
           <img
             className={`w-30 h-30 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-20"
             }`}
             style={{ transitionDelay: "900ms" }}
             src="/assets/icons/birdwithmessage3.svg"
@@ -183,7 +186,9 @@ function App() {
 
           <img
             className={`w-30 h-30 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-20"
             }`}
             style={{ transitionDelay: "1000ms" }}
             src="/assets/icons/birdwithmessage4.svg"
@@ -191,6 +196,30 @@ function App() {
           />
         </div>
       </div>
+
+      <img
+        className={`fixed top-1/2 w-24 h-24 transition-all duration-[3000ms] ease-linear`}
+        style={{
+          transitionDelay: "1500ms",
+          left: isVisible ? "110%" : "-10%",
+          transform: isVisible ? "translateY(-200px)" : "translateY(0)",
+        }}
+        src="/assets/icons/birdwithmessage1.svg"
+        alt="Flying bird"
+      />
+
+      <img
+        className={`fixed top-[60%] w-24 h-24 transition-all duration-[3000ms] ease-linear`}
+        style={{
+          transitionDelay: "2000ms",
+          left: isVisible ? "-10%" : "110%",
+          transform: isVisible
+            ? "translateY(-200px) scaleX(-1)"
+            : "translateY(0) scaleX(-1)",
+        }}
+        src="/assets/icons/birdwithmessage3.svg"
+        alt="Flying bird"
+      />
 
       <div className="fixed bottom-8 left-0 right-0 flex flex-col items-center gap-3 z-10">
         <p className="text-slate-500 text-sm font-medium">
