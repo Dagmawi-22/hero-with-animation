@@ -81,23 +81,23 @@ function App() {
           }`}
         >
           <img
-            className="absolute -left-40 top-8 w-16 h-16 opacity-60"
+            className="absolute -left-40 top-8 w-16 h-16"
             src="/assets/icons/bird.svg"
             alt="Bird"
           />
           <img
-            className="absolute -left-10 top-14 w-12 h-12 opacity-50"
+            className="absolute -left-10 top-14 w-12 h-12"
             src="/assets/icons/bird.svg"
             alt="Bird"
           />
 
           <img
-            className="absolute -right-28 top-14 w-14 h-14 opacity-60"
+            className="absolute -right-28 top-14 w-14 h-14"
             src="/assets/icons/bird.svg"
             alt="Bird"
           />
           <img
-            className="absolute -right-48 top-52 w-16 h-16 opacity-50"
+            className="absolute -right-48 top-52 w-16 h-16"
             src="/assets/icons/bird.svg"
             alt="Bird"
           />
@@ -146,26 +146,26 @@ function App() {
       <div className="fixed bottom-28 left-0 right-0 z-10 px-12">
         <div className="max-w-7xl mx-auto flex justify-between items-end">
           <img
-            className="w-40 h-40 opacity-70"
-            src="/assets/icons/birdwithmessage.svg"
+            className="w-30 h-30"
+            src="/assets/icons/birdwithmessage1.svg"
             alt="Bird with message"
           />
 
           <img
-            className="w-40 h-40 opacity-70"
-            src="/assets/icons/birdwithmessage.svg"
+            className="w-30 h-30"
+            src="/assets/icons/birdwithmessage2.svg"
             alt="Bird with message"
           />
 
           <img
-            className="w-40 h-40 opacity-70"
-            src="/assets/icons/birdwithmessage.svg"
+            className="w-30 h-30"
+            src="/assets/icons/birdwithmessage3.svg"
             alt="Bird with message"
           />
 
           <img
-            className="w-40 h-40 opacity-70"
-            src="/assets/icons/birdwithmessage.svg"
+            className="w-30 h-30"
+            src="/assets/icons/birdwithmessage4.svg"
             alt="Bird with message"
           />
         </div>
